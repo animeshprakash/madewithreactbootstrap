@@ -1,20 +1,49 @@
-body {
+* {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 .addFlex{
   display: flex;
   align-content: center;
   text-align: center;
 }
 .fas{
-  font-size: 2.5em;
+  font-size: 1em;
+}
+.background-rect{
+  background-color: #f58c57;
+  width: 100%;
+  position: absolute;
+  height: 75%;
+  top: 15%;
+  transform: rotate(0deg);
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: -106px;
+  padding-left: 2000px;
+  margin-right: -106px;
+  padding-right: 200px;
+  
+}
+.asset{
+  position: absolute;
+  top:10vh;
+  
+  height: 90%;
+  width: auto;
+  
+}
+#firstPage{
+  background-image: url(./img/bg.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media only screen and (min-width: 540px){
+  .background-rect{
+    height: 90%;
+  }
 }
