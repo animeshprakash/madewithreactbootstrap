@@ -10,7 +10,7 @@ function TechExIntro(){
                 <Col xs={5}><img src={QuestionImg} alt="" width="100" height="110" style={{opacity:0.7}}/></Col>
             </Row>
             <Row className="justify-content-center text-center">
-                <Col xs={4}>
+                <Col xs={6}>
                     <h1><b>What is <span style={{color:"#FB8449"}}>TechEx</span></b></h1>
                 </Col>
             </Row>

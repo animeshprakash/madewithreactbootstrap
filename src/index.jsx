@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './screen/css/fonts.css';
 import LandingPage from './screen/LandingPage';
 import reportWebVitals from './reportWebVitals';
 import ReactFullpage from '@fullpage/react-fullpage';
@@ -12,6 +13,7 @@ import MenuBar from './MenuBar';
 import PygameImage from './img/controllerAsset.svg';
 import FigmaImg from './img/phoneAsset.svg';
 import {TimelineLite} from 'gsap/all';
+var navbarBackground = 'transparent';
 class FullPage extends React.Component{
   constructor(props){
     super(props);
@@ -30,6 +32,11 @@ class FullPage extends React.Component{
     }else if(direction==="up" && background){
       this.backgroundTween.to(background,{rotation: 2,duration: 1, delay: 0.5})
       this.backgroundTween.play();
+    }
+    if(destination.isLast){
+      navbarBackground= 'light';
+    }else{
+      navbarBackground = 'transparent';
     }
   }
   render(){
@@ -68,7 +75,7 @@ class FullPage extends React.Component{
 }
 ReactDOM.render(
   <React.StrictMode>
-    <MenuBar/>
+    <MenuBar navBack = {navbarBackground}/>
     <FullPage/>
   </React.StrictMode>,
   document.getElementById('root')

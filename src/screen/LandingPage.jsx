@@ -4,6 +4,7 @@ import {Container,Row,Col} from 'react-bootstrap';
 import Logo from '../img/techexlogo.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/common.css';
+import './css/fonts.css';
 
 class LandingPage extends Component {
   render() {
