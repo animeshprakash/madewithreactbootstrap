@@ -11,15 +11,14 @@ class LandingPage extends Component {
     return (
      <Container className="fill">
       <Row className="justify-content-center">
-        <Col xs={4} style={{textAlign:'center'}}>
-          <img src={Logo} alt="" width="100%" height="100%"/>
+        <Col md={7} xl={4} xs={8} style={{textAlign:'center'}}>
+          <img src={Logo} alt="" width="100%" height="100%" id="mainlogo"/>
         </Col>
       </Row>
       <Row className="gap"> </Row>
       <Row className="justify-content-center">
         <Col xs={6} style={{textAlign:'center'}}>Scroll Down</Col>
       </Row>
-      
       <Row className="justify-content-center">
         <Col xs={1} style={{textAlign:'center'}}><a href="#introduction"><i className="fas fa-chevron-down"></i></a></Col>
       </Row>
